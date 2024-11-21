@@ -1,0 +1,118 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/*-------------------------
+    top selling product
+-------------------------*/
+.top-selling {
+    .col-lg-3 {
+        width: 20%;
+    }
+
+    & h4 {
+        @include section-heading;
+        margin-bottom: 40px;
+    }
+
+    .selling-product-wrapper {
+        transition: all .5s ease;
+        position: relative;
+        overflow: hidden;
+        margin-top: 40px;
+        border-radius: 6px;
+        border: 0.5px solid $border-line-clr;
+        padding: 16px;
+
+        .top-selling-content {
+            position: relative;
+            margin-bottom: 5px;
+            text-align: center;
+
+            a img {
+                height: 180px;
+            }
+
+            span.green-badge {
+                @include green-badge;
+            }
+
+            span.red-badge {
+                @include red-badge;
+            }
+        }
+
+        .product-info {
+            & h6 {
+                @include product-md-title;
+                line-height: 1.4;
+                height: 50px;
+                display: flex;
+                align-items: center;
+            }
+
+            .product-review {
+                margin-bottom: 10px;
+
+                .product-review-text {
+                    & p {
+                        @include review-text;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .review-icon {
+                    i {
+                        color: $primary-clr;
+                    }
+                }
+            }
+
+            .product-selling-price {
+                & p {
+                    @include product-prim-price;
+                    margin-bottom: 0;
+
+                    & span {
+                        @include product-del-clr;
+                        margin-left: 5px;
+                    }
+                }
+
+                & span.product-right-dis {
+                    @include product-right-dis-clr;
+                }
+            }
+        }
+
+        .selling-overlay {
+            position: absolute;
+            top: 200px;
+            right: -100px;
+            width: 218px;
+            height: 218px;
+            background-color: $primary-clr;
+            box-shadow: -10px -10px 30px rgba(249, 115, 22, 0.30);
+            transition: all .5s ease;
+            z-index: 2;
+            opacity: 0;
+
+            a {
+                display: block;
+
+                svg {
+                    position: absolute;
+                    top: 60px;
+                    left: 60px;
+                    z-index: 9;
+                }
+            }
+        }
+
+        &:hover {
+            .selling-overlay {
+                opacity: 1;
+                border-radius: 50%;
+            }
+        }
+    }
+}

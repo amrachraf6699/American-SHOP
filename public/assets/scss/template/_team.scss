@@ -1,0 +1,86 @@
+/*-------------------------
+    Team
+-------------------------*/
+.team-member-wrapper {
+    .team-title {
+        margin: 65px 0;
+
+        & h2 {
+            @include secondary-heading;
+        }
+    }
+
+    .teamImage {
+        position: relative;
+            overflow: hidden;
+        & a{
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        .social-media {
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+
+            & a {
+                margin-bottom: 12px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                & i {
+                    font-size: 30px;
+                }
+            }
+        }
+        &::after {
+            @include after_tr (0, 0, 50%, 100%, rgba(0, 0, 0, 0.5));
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 10px;
+            transition: var(--transition);
+            z-index: 1;
+            border-top-left-radius: 0;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 20px;
+        }
+
+        &:hover {
+
+            .social-media,
+            &::after {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .social-media {
+                right: 10%;
+            }
+        }
+    }
+
+    .team-content {
+        & a {
+            h6 {
+                @include fs ($dark-clr, 24px, 500, $jost);
+            }
+        }
+
+        & p {
+            @include fs ($dark-light-clr, 18px, 400, $jost);
+            margin-bottom: 12px;
+            margin-top: 16px;
+        }
+    }
+}

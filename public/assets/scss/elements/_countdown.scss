@@ -1,0 +1,36 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/*-------------------------
+    Countdown design
+-------------------------*/
+.countdown {
+    margin-left: 72px;
+
+    .counter {
+        display: flex;
+        max-width: fit-content;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: $jost;
+        font-weight: 500;
+        font-size: 14px;
+
+        .counter__box {
+            text-align: center;
+            background: $primary-clr;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1px 14px;
+            margin-right: 25px;
+            border-radius: 5px;
+
+            .counter__duration {
+                font-size: 12px;
+            }
+        }
+    }
+}

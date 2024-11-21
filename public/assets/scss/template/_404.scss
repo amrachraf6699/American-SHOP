@@ -1,0 +1,39 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/*-------------------------
+    404 Styles
+-------------------------*/
+.error-page {
+    .error-page-content {
+        & h1 {
+            @include fs (#000000, 100px, 700, $jost);
+        }
+
+        & h3 {
+            @include fs (#000000, 32px, 500, $jost);
+            margin-top: 8px;
+        }
+
+        .error-btn {
+            @include fs ($white-clr, 16px, 500, $poppins);
+            padding: 14px 16px;
+            background-color: $primary-clr;
+            border-radius: 2px;
+            margin: 60px 0;
+            transition: var(--transition);
+
+            & svg {
+                transition: var(--transition);
+            }
+
+            &:hover {
+                background-color: $dark-clr;
+
+                & svg {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

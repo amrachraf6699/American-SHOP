@@ -1,0 +1,109 @@
+/*---------------------------------------------
+Template Name: Click and shop
+Template URL: 
+Description: Digital Agency HTML5 Template
+Author: Luminous Labs
+Author URL: https://luminouslabsbd.com/
+Version: 1.0
+
+===============================================   
+STYLESHEET INDEXING
+|
+|___ Default Styles
+|	|___ Variables
+|	|___ Reset Styels
+|	|___ Typography
+|	|___ Forms Styles
+|	|___ Helper Classes 
+|
+|___ Elements Styles
+|	|___ Back To Top
+|	|___ Countdown
+|	|___ Preloader 
+|
+|___Template Styles
+|	|___ About Us
+|	|___ Banner
+|	|___ Brand
+|	|___ Dealing Product
+|	|___ Featured
+|	|___ Flash Sell
+|	|___ New Arrival
+|	|___ Product
+|	|___ Shop Card
+|	|___ Top Selling 
+|	|___ Trending
+|	|___ Typography
+|	|___ Ad banner 
+|	|___ Cart
+|	|___ Contact
+|	|___ Pages
+|	|___ Team
+|	|___  404 Error
+|
+|___Blocks Styles
+|	|___ Header Styles
+|	|___ Blog Styles
+|	|___ Footer Styles
+|
+|___Dark Style
+|
+|___Spacing
+|
+|___ END STYLESHEET INDEXING
+
+--------------------------------------------*/
+
+/*=======================================================================
+1. Default Styles
+=========================================================================*/
+@import "default/variable";
+@import "default/reset";
+@import "default/typography";
+@import "default/form";
+@import "default/classes";
+
+/*=======================================================================
+2. Elements Styles
+=========================================================================*/
+@import "elements/back-top";
+@import "elements/countdown";
+@import "elements/preloader";
+
+/*=======================================================================
+3. Template Styles
+=========================================================================*/
+@import "template/about";
+@import "template/banner";
+@import "template/trending";
+@import "template/shop-card";
+@import "template/ad-banner";
+@import "template/top-selling";
+@import "template/dealing-product";
+@import "template/flash-sell";
+@import "template/product";
+@import "template/new-arrivals";
+@import "template/featured";
+@import "template/cart";
+@import "template/brand";
+@import "template/contact";
+@import "template/404";
+@import "template/pages";
+@import "template/team";
+@import "template/typography";
+
+/*=======================================================================
+4.Blocks Styles 
+=========================================================================*/
+@import "header/header";
+@import "blog/blog";
+@import "footer/footer";
+@import "layout/responsive";
+
+
+/*=======================================================================
+6. Spacing 
+=========================================================================*/
+@import "default/spacing";
+
+

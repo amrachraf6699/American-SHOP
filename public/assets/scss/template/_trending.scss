@@ -1,0 +1,249 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/*-------------------------
+    Top trending
+-------------------------*/
+.trending-products {
+    margin-top: 100px;
+
+    .section-head {
+        .title h4 {
+            @include section-heading;
+        }
+
+        .box-button-swiper {
+            position: relative;
+
+            .swiper-wrapper {
+                .swiper-slide {
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .swiper-button-prev {
+                left: inherit;
+                right: 70px !important;
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                @include swip-icon;
+                transition: all .5s;
+
+                &::after {
+                    display: none;
+                }
+
+                & i {
+                    color: $primary-clr;
+                }
+
+                &:hover {
+                    background: $primary-clr;
+
+                    & i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .box-swiper {
+        position: relative;
+
+        &::after {
+            @include after_tl (20px, 25%, 96%, 100%, url(../media/others/trending.png));
+            background-repeat: no-repeat;
+        }
+    }
+
+    .trend-info {
+        text-align: center;
+
+        .trend-img {
+            & a {
+                img {
+                    @include circle-img;
+                    @include d-flex;
+                    border: 1px solid $primary-clr;
+                    background-color: $trend-back-1;
+                }
+            }
+        }
+
+        .trending-background-2 {
+            & a {
+                img {
+                    border: 1px solid rgba(130, 203, 254, 0.50);
+                    background-color: #E9F6FF;
+                }
+            }
+        }
+
+        .trending-background-3 {
+            & a {
+                img {
+                    border: 1px solid rgba(131, 182, 79, 0.50);
+                    background-color: #F6FFED;
+                }
+            }
+        }
+
+        .trending-background-4 {
+            & a {
+                img {
+                    border: 1px solid rgba(207, 154, 160, 0.50);
+                    background-color: #FFF9FA;
+                }
+            }
+        }
+
+        .trending-background-5 {
+            & a {
+                img {
+                    border: 1px solid rgba(255, 147, 175, 0.50);
+                    background-color: #FCE5EB;
+                }
+            }
+        }
+
+        .trending-background-6 {
+            & a {
+                img {
+                    border: 1px solid rgba(255, 62, 117, 0.50);
+                    background-color: #FFF8FA;
+                }
+            }
+        }
+
+        .trending-background-7 {
+            & a {
+                img {
+                    border: 1px solid rgba(164, 152, 63, 0.50);
+                    background-color: #FFFDED;
+                }
+            }
+        }
+
+        .heading {
+            @include product-sm-title;
+            margin-top: 12px;
+        }
+    }
+}
+
+
+/*-------------------------
+    Top categories
+-------------------------*/
+.top-category-products {
+    margin-top: 100px;
+
+    .section-header {
+        &::after {
+            display: none;
+        }
+
+        .title {
+            & h4 {
+                @include section-heading;
+                margin-bottom: 32px;
+                text-align: left;
+            }
+        }
+
+        .box-button-swiper {
+            .swiper-button-prev {
+                left: inherit;
+                right: 70px !important;
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                @include swip-icon;
+                transition: all .5s;
+                top: -5px;
+
+                &::after {
+                    display: none;
+                }
+
+                & i {
+                    color: $primary-clr;
+                }
+
+                &:hover {
+                    background: $primary-clr;
+
+                    & i {
+                        color: $white-clr;
+                    }
+                }
+            }
+        }
+    }
+
+    .trend-info {
+        padding: 24px 12px;
+        border-radius: 20px;
+        transition: all .5s;
+        border: 1px solid transparent;
+        background-color: $top-category-back-1;
+
+        .trend-img {
+            @include border-img;
+            margin-bottom: 16px;
+
+            & img {
+                height: 120px;
+            }
+        }
+
+        .heading {
+            transition: var(--transition);
+            @include fs ($dark-clr, 16px, 500, $jost);
+
+            .svg-icon {
+                opacity: 0;
+                transition: all .5s ease-in;
+            }
+        }
+
+        &:hover {
+            border: 1px solid $primary-clr;
+
+            .heading {
+                color: $primary-clr;
+            }
+
+            .svg-icon {
+                opacity: 1;
+                margin-left: 3px;
+            }
+        }
+    }
+
+    .top-category-back-2 {
+        background-color: $top-category-back-2;
+    }
+
+    .top-category-back-3 {
+        background-color: $top-category-back-3;
+    }
+
+    .top-category-back-4 {
+        background-color: $top-category-back-4;
+    }
+
+    .top-category-back-5 {
+        background-color: $top-category-back-5;
+    }
+
+    .top-category-back-6 {
+        background-color: $top-category-back-1;
+    }
+}

@@ -1,0 +1,180 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/*-------------------------
+    Flash sell
+-------------------------*/
+.flash-sell {
+    position: relative;
+
+    .section-header {
+        position: relative;
+
+        &::after {
+            @include head-bottom-border;
+
+        }
+    }
+
+    .selling-product-wrapper {
+        position: relative;
+        margin-top: 40px;
+        border-radius: 10px;
+        background-color: $product-background;
+
+        .flash-selling-content {
+            position: relative;
+            padding: 28px;
+
+            & a img {
+                width: 210px;
+                height: 240px;
+                object-fit: cover;
+                transition: .5s ease-in-out;
+            }
+
+            span.green-badge {
+                @include green-md-badge;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        .product-info {
+            padding: 15px;
+            margin-top: 28px;
+            border-top: 0.5px solid rgba(157, 159, 162, 0.3);
+
+            & h6 {
+                @include fs ($dark-clr, 24px, 500, $jost);
+                margin-bottom: 12px;
+            }
+
+            .product-selling-price {
+                & p {
+                    @include fs ($primary-clr, 20px, 500, $jost);
+                    margin-bottom: 0;
+
+                    & del {
+                        @include fs ($text-blur, 20px, 500, $jost);
+                    }
+                }
+            }
+        }
+
+        .product-overlay {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            visibility: hidden;
+
+            .product-overlay-icon {
+                display: flex;
+                transition: var(--transition);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                & a {
+                    display: flex;
+                    margin-bottom: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    transition: var(--transition);
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    background-color: $dark-clr;
+                }
+            }
+        }
+
+        .add-btn {
+            position: absolute;
+            left: 0px;
+            bottom: -20px;
+            opacity: 0;
+            transition: var(--transition);
+            line-height: 24px;
+            width: 100%;
+            padding: 11px 12px;
+
+            & a {
+                background-color: $dark-clr;
+                padding: 12px 10px;
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 500;
+                color: #fff;
+                border-radius: 10px;
+                text-transform: uppercase;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+        }
+
+        &:hover {
+
+            .product-overlay,
+            .add-btn {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .add-btn {
+                bottom: 100px;
+            }
+
+            .product-overlay {
+                right: 10px;
+            }
+        }
+    }
+}
+
+.flash-sell-border {
+    .container {
+        border: 1px solid $primary-clr;
+        padding: 24px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        position: relative;
+
+        &::after {
+            @include after_tl (0, 80px, 100%, 1px, $primary-clr);
+        }
+
+        .section-header {
+            &::after {
+                display: none;
+            }
+        }
+
+        .trend-icon {
+            a {
+                padding: 5px 15px;
+                border-radius: 5px;
+                border: 1px solid $text-blur;
+                @include fs ($dark-clr, 12px, 500, $jost);
+                transition: var(--transition);
+
+                &:hover {
+                    color: $primary-clr;
+                }
+            }
+        }
+    }
+}

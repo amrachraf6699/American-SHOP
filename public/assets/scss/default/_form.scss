@@ -1,0 +1,60 @@
+/*-------------------------
+    Forms Styles
+-------------------------*/
+input,
+.form-control {
+    border: 1px solid #8597BF;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    color: var(--color-text-light);
+    padding: 12px 20px;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 20px 48px -14px rgba(153, 161, 170, 0.25);
+        border-color: #8597BF;
+
+    }
+
+    /* -- Placeholder -- */
+    &::placeholder {
+        color: #8597BF;
+        /* Firefox */
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #8597BF;
+    }
+
+    &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #8597BF;
+    }
+}
+
+// Form Action Message
+
+.error-msg,
+.success-msg {
+    margin-top: 25px;
+
+    p {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+}
+
+.error-msg {
+    p {
+        color: #ff0000;
+    }
+}
+
+.success-msg {
+    p {
+        color: #15c54b;
+    }
+}

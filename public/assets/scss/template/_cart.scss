@@ -1,0 +1,126 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/*-------------------------
+    cart
+-------------------------*/
+.block-cart {
+    .box-cart-wrapper {
+        border: 1px solid #8597BF;
+        padding: 20px 40px 20px 20px !important;
+        border-radius: 10px !important;
+        background-color: $white-clr;
+
+        .title-product-cart {
+            @include fs (#777, 18px, 500, $jost);
+            font-style: normal;
+            line-height: 140%;
+            letter-spacing: 0.2px;
+        }
+
+        & input {
+            width: 40px;
+            height: 38px;
+            border-radius: 5px;
+            background: #FEEED0;
+            border: none;
+            padding: 0 0 0 10px;
+            @include fs ($primary-clr, 12px, 500, $jost);
+        }
+
+        .price {
+            @include fs (#474747, 18px, 400, $jost);
+        }
+
+        .brand-1 {
+            padding-top: 34px;
+        }
+
+        .btn-link:hover,
+        .btn-link {
+            color: #474747;
+        }
+
+        .btn-link:focus {
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    .order-summery {
+
+        padding: 32px;
+        border: 1px solid #8597BF;
+        border-radius: 2px;
+
+        & h5 {
+            @include fs ($text-clr, 20px, 500, $jost);
+            margin-bottom: 32px;
+        }
+
+        .order-details {
+
+            & p,
+            & span {
+                @include fs ($text-clr, 16px, 400, $jost);
+            }
+
+            margin-bottom: 24px;
+
+            .fw {
+                font-weight: 500;
+            }
+        }
+
+        .total {
+            position: relative;
+
+            & p,
+            & span {
+                margin-top: 32px;
+            }
+
+            &::after {
+                @include after_tl (0, 0, 100%, 1px, $text-blur);
+            }
+        }
+
+
+        .product-overlay {
+            .cart-btn {
+                @include fs (#A2A3B1, 16px, 400, $jost);
+            }
+
+            .add-btn {
+                padding: 16px;
+                border-radius: 5px;
+                border: 1px solid #D1D1D8;
+                transition: var(--transition);
+                width: 100%;
+                @include fs ($text-blur, 16px, 600, $jost);
+
+                &:hover {
+                    background-color: $dark-clr;
+                    color: #fff;
+
+                    .cart-btn {
+                        color: #fff;
+                        cursor: pointer;
+                    }
+
+                    & svg {
+                        & path {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ad-style-2 {
+        .banner-text-wrapper {
+            padding: 30px 15px;
+        }
+    }
+}

@@ -1,0 +1,358 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/*-------------------------
+    shop card
+-------------------------*/
+
+.shop-card {
+    .cloth-img img {
+        object-fit: cover;
+    }
+
+    .shop-card-clothing {
+        height: 338px;
+        background-color: $card-1;
+        justify-content: space-between;
+
+        .card-info {
+            padding: 20px 0 20px 20px;
+
+            >a {
+                @include shop-secnd-btn;
+                margin-top: 130px;
+                transition: all .3s;
+
+                &:hover {
+                    background-color: $primary-clr;
+                }
+            }
+
+            .card-details {
+                @include d-flex;
+                justify-content: flex-start;
+
+                & h6 {
+                    @include card-sm-title;
+                    margin-left: 7px;
+                }
+            }
+
+            & p {
+                @include card-lg-title;
+                margin-top: 6px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .shop-card-img {
+            position: relative;
+
+            .sale-badge {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+        }
+    }
+
+    .card-1 {
+        @include d-flex;
+        flex-wrap: nowrap;
+
+        .shop-card-img {
+            padding-right: 40px;
+        }
+    }
+
+    .card-3,
+    .card-2 {
+        background-color: $card-2;
+        padding: 40px 40px 4px 40px;
+        height: 338px;
+
+        .card-info {
+            padding: 0;
+        }
+
+        .shop-card-img {
+            a img {
+                height: 210px;
+            }
+
+            .card-shadow-img {
+                bottom: -40px;
+                left: -20px;
+            }
+        }
+    }
+
+    .card-3 {
+        background-color: $card-3;
+    }
+}
+
+/*-------------------------
+   card item
+-------------------------*/
+.card-item {
+    position: relative;
+
+    .card-item-post-block {
+        position: relative;
+
+        .card-content {
+            background-color: $card-background;
+            border-radius: 10px;
+            padding: 12px 20px;
+            overflow: hidden;
+
+            .card-item-info {
+                & p {
+                    @include card-title;
+                    margin-bottom: 0;
+                }
+
+                .card-content-title a h6 {
+                    @include card-pera;
+                    width: max-content;
+                }
+
+                .card-item-price {
+                    .price p {
+                        @include card-prim-price;
+
+                        & sup {
+                            @include card-sm-dlr;
+                        }
+
+                        & span {
+                            @include product-del-clr;
+                        }
+                    }
+
+                    .price-img {
+                        position: relative;
+
+                        .img-up-price {
+                            position: absolute;
+                            top: 8px;
+                            left: 12px;
+                            z-index: 9;
+
+                            & p {
+                                @include price-white-clr;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card-btn a {
+                @include card-prim-btn;
+
+                & img {
+                    padding-bottom: 2px;
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        .card-center {
+            background: #E7EAF2;
+        }
+
+        .card-last {
+            background: #FFEEE4;
+        }
+    }
+
+    .card-svg-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        & svg {
+            border-radius: 10px;
+        }
+    }
+
+    .card-right-img {
+        z-index: 1;
+        margin-top: 18px;
+
+        & img {
+            height: 210px;
+        }
+    }
+}
+
+/*-------------------------
+    shop card style 2
+-------------------------*/
+.shop-card-wrapper {
+    .shop-card-item-info {
+        background-color: $card-4;
+        padding: 65px 65px 5px 65px;
+        border-radius: 20px;
+
+        .card-info {
+            & p {
+                @include fs ($green-clr, 14px, 500, $jost);
+            }
+
+            .card-head {
+                margin-bottom: 24px;
+                @include fs ($text-dark-clr, 24px, 600, $jost);
+            }
+
+            .shop-btn {
+                background-color: $dark-clr;
+                transition: all .3s;
+
+                & a {
+                    @include fs ($white-clr, 16px, 600, $jost);
+                }
+
+                &:hover {
+                    background-color: $primary-clr;
+                }
+            }
+        }
+
+        .shop-card-img {
+            z-index: 1;
+            margin: 60px 0;
+
+            .offer-badge {
+                position: absolute;
+                top: -60px;
+                right: 36px;
+            }
+
+            .circle-img {
+                position: absolute;
+                top: 100px;
+                left: -150px;
+                z-index: -1;
+            }
+
+            .card-shadow-img {
+                bottom: -40px;
+            }
+        }
+    }
+
+    .shop-card-item {
+        background-color: $card-5;
+        padding: 45px 45px 5px 45px;
+        border-radius: 20px;
+
+        .card-info {
+            & p {
+                @include fs ($green-clr, 14px, 500, $jost);
+            }
+
+            .card-head {
+                margin-bottom: 24px;
+                @include fs ($text-dark-clr, 24px, 600, $jost);
+            }
+
+            .shop-btn {
+                z-index: 1;
+                background-color: $dark-clr;
+                transition: all .3s;
+
+                & a {
+                    @include fs ($white-clr, 16px, 600, $jost);
+                }
+
+                &:hover {
+                    background-color: $primary-clr;
+                }
+            }
+        }
+        .featured-card {
+            padding: 40px;
+        }
+
+        .shop-card-img {
+            z-index: 1;
+
+            .circle-img {
+                position: absolute;
+                top: 40px;
+                right: -30px;
+                z-index: -1;
+            }
+
+            .circle-img-2 {
+                top: -10px;
+                right: 5px;
+            }
+        }
+    }
+
+    .shop-card-3 {
+        background-color: $card-6;
+    }
+}
+
+/*-------------------------
+    shop card item three
+-------------------------*/
+.card-item-three {
+    .card-item-post-block {
+        padding: 35px 35px;
+        background-color: $card-7;
+        border-radius: 20px;
+
+        .card-item-info {
+            z-index: 1;
+
+            .card-content-title {
+                & h6 {
+                    @include fs ($primary-clr, 14px, 500, $jost);
+                    margin-bottom: 12px;
+                }
+
+                & h2 {
+                    @include fs ($text-dark-clr, 24px, 500, $jost);
+                    margin-bottom: 12px;
+                }
+
+                & p {
+                    @include fs ($text-light-clr, 14px, 400, $jost);
+                    margin-bottom: 12px;
+                    padding-right: 50px;
+                }
+
+                .explore {
+                    @include fs ($text-dark-clr, 14px, 700, $jost);
+                }
+            }
+        }
+
+        .card-item-img {
+            .card-img-wrapper {
+                z-index: 1;
+                height: 185px;
+            }
+        }
+
+        .card-svg {
+            position: absolute;
+            top: 40px;
+            right: -18px;
+            z-index: -1;
+        }
+    }
+
+    .card-wrapper-2 {
+        background-color: $card-5;
+    }
+
+    .card-wrapper-3 {
+        background-color: $card-4;
+    }
+}

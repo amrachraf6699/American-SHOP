@@ -1,0 +1,149 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+/*-------------------------
+  Helper Classes
+-------------------------*/
+
+.section-margin {
+  margin-bottom: 120px;
+
+  @media #{$laptop-device} {
+    margin-bottom: 100px;
+  }
+
+  @media #{$smlg-device} {
+    margin-bottom: 80px;
+  }
+
+  @media #{$md-layout} {
+    margin-bottom: 60px;
+  }
+
+  @media #{$sm-layout} {
+    margin-bottom: 60px;
+  }
+}
+
+.section-padding {
+  padding: 140px 0;
+}
+
+.product-background {
+  text-align: center;
+  background: $background-light;
+  padding: 100px 0;
+}
+
+.product-background h2 {
+  @include secondary-heading;
+  margin-bottom: 32px;
+}
+
+.blog-breadcrumb ul li a,
+.product-background ul li a {
+  @include product-md-title;
+  margin-right: 4px;
+}
+
+.blog-breadcrumb .active a,
+.product-background .active a {
+  @include fs($primary-clr, 16px, 300, $jost);
+  text-align: center;
+  margin-left: 4px;
+}
+
+.section-header {
+  position: relative;
+  transition: all .5s ease;
+
+  & h4 {
+    transition: var(--transition);
+
+    &:hover {
+      color: $primary-clr !important;
+      cursor: pointer;
+    }
+  }
+
+  &::after {
+    @include head-bottom-border;
+  }
+
+  .trend-icon {
+    & svg {
+      transition: var(--transition);
+    }
+
+    transition: all .5s ease-in;
+
+    &:hover svg {
+      transform: rotate(40deg);
+    }
+  }
+
+  & a {
+    @include fs($dark-clr, 16px, 600, $jost);
+
+    & img {
+      transition: all .5s ease-in;
+    }
+  }
+}
+
+
+.category-submenu.show {
+  display: block !important;
+}
+
+.shop-btn {
+  padding: 12px 24px;
+  background: $primary-clr;
+  border-radius: 2px;
+  transition: all .3s;
+
+  &:hover {
+    background-color: $dark-clr;
+  }
+}
+
+// input {
+//   min-width: 300px;
+//   padding: 12px;
+//   border: 1px solid rgba(238, 238, 238, 1);
+//   outline: none;
+// }
+
+.btn:focus,
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.you-tube {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 4px;
+  background-color: #F00;
+  text-align: center;
+}
+
+.box-swiper .swiper-container {
+  position: relative;
+  height: 100%;
+}
+
+.review-icon {
+  i {
+    font-size: 15px;
+    margin-left: 2px;
+    color: $yellow-clr;
+
+    &.half {
+      color: $text-blur;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

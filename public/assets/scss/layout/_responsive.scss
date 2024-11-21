@@ -1,0 +1,1690 @@
+/*-------------------------
+   Responsive Styles
+-------------------------*/
+@media (max-width: 1600px) {
+    .banner.banner-style-1 .banner-content .title {
+        line-height: 1.3;
+    }
+
+    .product-style-5 .product-category-wrapper input[type=range] {
+        left: 1%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .about-us .about-content .about-img-wrapper .about-img img {
+        width: 250px;
+    }
+
+    .about-us .about-content .about-img-wrapper {
+        left: 6%;
+        transform: translateX(6%);
+    }
+
+    .mainmenu>li {
+        margin: 0 20px;
+    }
+
+    .mainmenu>.menu-item-has-children .ll-submenu {
+        min-width: 220px;
+    }
+
+    .header-style-1 .header-navbar .header-category .category-menu .category-submenu,
+    .header-style-1 .header-navbar .header-category .category-menu {
+        width: 250px;
+    }
+
+    .banner {
+        position: relative;
+        z-index: 2;
+        padding-top: 120px;
+    }
+
+    .banner.banner-style-1 .banner-content {
+        margin-left: 200px;
+    }
+
+    .shop-card .shop-card-clothing .card-info p {
+        font-size: 26px;
+    }
+
+
+    .featured-product .featured-left-product .featured-product-info .product-range::after {
+        width: 204px;
+    }
+
+    .footer input {
+        width: 250px;
+    }
+
+    .shop-btn {
+        min-width: 150px;
+    }
+
+    .product-style-5 .product-category-wrapper input[type=range] {
+        left: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .about-us .about-content .about-img-wrapper .about-img img {
+        width: 230px;
+    }
+
+    .about-us .about-content .about-img-wrapper {
+        left: 6%;
+        transform: translateX(6%);
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .header-logo {
+        width: 150px;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .header-search .search .select {
+        width: 150px;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .header-search .search input {
+        width: 250px;
+
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .header-search .search .search-icon {
+        width: 50px;
+        height: 58px;
+        right: -50px;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .account-icon {
+        margin-right: 12px;
+    }
+
+    .header-style-1 .header-navbar .header-category .category-menu .category-submenu li a {
+        padding: 10px 5px;
+        font-size: 12px;
+
+    }
+
+
+    .product-style-5 .product-category-wrapper input[type=range] {
+        left: 0;
+    }
+
+    .shop-card-item-info .circle-img svg {
+        width: 280px;
+        height: 210px;
+    }
+
+    .shop-card-item .circle-img svg {
+        width: 220px;
+        height: 110px;
+    }
+
+    .header-style-1 .header-navbar .header-category .category-menu .category-submenu,
+    .header-style-1 .header-navbar .header-category .category-menu {
+        width: 200px;
+    }
+
+    .dealing-products .dealing-top-wrapper .slide-arrow-left.slick-arrow {
+        left: 92% !important;
+    }
+
+    .mainmenu>li {
+        margin: 0 8px;
+    }
+
+    .header-style-1 .header-navbar .header-info .contact-information>li {
+        margin-left: 16px;
+        font-size: 16px;
+    }
+
+    .banner-style-1 {
+        padding-top: 100px;
+    }
+
+    .banner.banner-style-1 .banner-content {
+        margin-left: 200px;
+    }
+
+    .banner .banner-content .subtitle {
+        font-size: 22px;
+    }
+
+    .banner .banner-content p {
+        font-size: 18px;
+    }
+
+    .shop-card .shop-card-clothing .card-info p {
+        font-size: 26px;
+    }
+
+    .shop-card .card-1 {
+        flex-wrap: nowrap;
+    }
+
+    .shop-card .shop-card-clothing .card-info>a {
+        padding: 12px 14px 12px 14px;
+    }
+
+    .featured-product .tab-content .tab-pane .featured-left-product .featured-product-info .bottom-text p {
+        font-size: 16px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-right-img img,
+    .advertisement .ad-background .ad-banner-overly .ad-left-img img {
+        width: 150px;
+        height: 250px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-right-img::after {
+        width: 150px;
+        height: 250px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-left-img::after {
+        top: 90px;
+        width: 150px;
+        height: 250px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly {
+        padding: 96px 40px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .middle-content h2 {
+        font-size: 32px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .middle-content .middle-content-pera p {
+        font-size: 12px;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail {
+        background-color: #F4F2FF;
+        padding: 56px 30px 200px 30px;
+        flex-basis: 50%;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail {
+        top: -85px;
+        padding: 56px 30px 200px 30px;
+        flex-basis: 52%;
+    }
+
+    .banner-style-2 .hero-content {
+        align-items: center;
+        background-image: linear-gradient(to right, #FDF8EF 59%, #F4F2FF 45%);
+    }
+
+    .banner-style-2 .banner-img {
+        position: absolute;
+        top: 0;
+        right: 30px;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img-middle {
+        top: 60px;
+        right: 120px;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img-last {
+        top: 120px;
+        left: inherit;
+        right: 210px;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper,
+    .banner.banner-style-2 .banner-thumbnail {
+        background-color: transparent;
+    }
+
+    .shop-btn {
+        min-width: 130px;
+        padding: 8px 12px;
+    }
+
+    .flash-sell .selling-product-wrapper .product-info .product-selling-price p {
+        font-size: 16px;
+    }
+
+    .review-icon i {
+        font-size: 13px;
+    }
+
+    .flash-sell .selling-product-wrapper .product-info .product-selling-price p del {
+        font-size: 16px;
+    }
+
+    .flash-sell .selling-product-wrapper .product-info h6 {
+        font-size: 20px;
+    }
+
+    .review-icon i {
+        margin-left: 0px;
+    }
+
+    .new-arrivals-products .arrivals-product-wrapper .selling-pera p {
+        padding: 0;
+        text-align: center;
+    }
+
+    .blog-list .cardBlogStyle1 .cardInfo a .post-meta-title {
+        font-size: 42px;
+    }
+
+    .blog-list .sidebar-right .content-sidebar .list-featured-posts .cardFeaturePost .cardImage img {
+        height: 74px;
+        width: 105px;
+    }
+
+    .blog-list .sidebar-right .content-sidebar .list-featured-posts .cardFeaturePost .cardInfo .link-feature {
+        font-size: 14px;
+    }
+
+    .product-category-wrapper .block-filter .box-collapse ul li .font-xs {
+        margin-left: 8px;
+        font-size: 16px;
+    }
+
+    .order-tracking-info-wrapper .order-img img {
+        width: 850px;
+        height: 720px;
+    }
+
+
+    .order-tracking-info-wrapper .order-track-info {
+        padding: 40px 40px;
+        border-radius: 10px;
+        width: 600px;
+        top: 90px;
+    }
+
+    .order-tracking-info-wrapper .order-track-info h2 {
+        font-size: 32px;
+    }
+
+    .product-category-wrapper .block-filter .box-collapse ul:first-child {
+        margin-right: 8px;
+    }
+
+    .order-tracking-info-wrapper .order-track-info p,
+    .order-tracking-info-wrapper .order-track-info .order-input h6 {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .about-us .about-content .about-img-wrapper .about-img img {
+        width: 200px;
+    }
+
+    .about-us .about-content .about-img-wrapper {
+        left: 6%;
+        transform: translateX(6%);
+    }
+
+    .header-search,
+    .search-input,
+    .header-mainmenu,
+    .header-category,
+    .header-info {
+        display: none;
+    }
+
+    .header-account {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .account-icon {
+        margin-right: 18px !important;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .account-icon {
+        width: 40px !important;
+        height: 40px !important;
+        line-height: 35px !important;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .account-icon .number-tag {
+        height: 18px !important;
+        width: 18px !important;
+        line-height: 18px !important;
+        font-size: 8px !important;
+    }
+
+    .banner-style-1 {
+        padding-top: 100px;
+    }
+
+    .banner-style-1 .shop-btn {
+        margin-bottom: 40px;
+    }
+
+    .banner .banner-content .subtitle {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+
+    .card-style-2 .card-1 {
+        margin-top: 24px;
+    }
+
+    .shop-card .card-1 {
+        margin-bottom: 24px;
+    }
+
+    .brand-before-icon-img {
+        right: 100px !important;
+    }
+
+    .brand-icon-img {
+        left: 100px !important;
+    }
+
+    .brand-before-icon-img svg,
+    .brand-icon-img svg {
+        width: 50px;
+        height: auto;
+    }
+
+    .top-selling .col-md-6 {
+        width: 50% !important;
+    }
+
+    .card-item .card-item-post-block .card-content {
+        margin-bottom: 24px;
+    }
+
+    .card-1 .shop-card-img img {
+        width: 270px;
+    }
+
+    .checkout .shop-btn {
+        margin-bottom: 24px;
+    }
+
+    .checkout .checkout-box {
+        margin-bottom: 40px !important;
+    }
+
+    .shop-card .shop-card-clothing .shop-card-img .sale-badge {
+        top: 0;
+    }
+
+    .card-1 .shop-card-img .sale-badge img {
+        width: 100%;
+    }
+
+    .ad-style-2 .banner-text-wrapper .shop-btn {
+        padding: 8px 8px;
+        font-size: 14px;
+        margin-left: 8px;
+    }
+
+    .ad-style-2 .banner-text-wrapper .banner-text {
+        font-size: 32px;
+    }
+
+    .ad-style-2 .banner-text-wrapper .banner-content h4 {
+        font-size: 28px;
+    }
+
+    .shop-card .shop-card-clothing .card-info>a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .shop-card .shop-card-clothing .card-info p {
+        font-size: 28px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly {
+        padding: 40px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .middle-content h2 {
+        font-size: 32px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .middle-content .middle-content-pera p {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-right-img::after,
+    .advertisement .ad-background .ad-banner-overly .ad-right-img img,
+    .advertisement .ad-background .ad-banner-overly .ad-left-img img {
+        width: 120px;
+        height: 190px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-right-img img {
+        bottom: 55px;
+    }
+
+
+    .advertisement .ad-background .ad-banner-overly .ad-right-img::after {
+        bottom: 60px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-left-img::after {
+        top: 40px;
+        width: 120px;
+        height: 190px;
+    }
+
+    .countdown {
+        margin-left: 24px;
+    }
+
+    .dealing-products .dealing-top-wrapper .slide-arrow-left.slick-arrow {
+        left: 90% !important;
+    }
+
+    .banner.banner-style-2 .hero-content {
+        flex-direction: column;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper {
+        order: 2;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper,
+    .banner.banner-style-2 .banner-thumbnail {
+        flex-basis: 100%;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail {
+        padding: 300px 0 265px;
+    }
+
+    .banner.banner-style-2 .banner-img {
+        position: absolute;
+        top: 60px;
+        right: 25%;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img-middle {
+        top: 130px;
+        right: 35%;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img-last {
+        top: 190px;
+        left: inherit;
+        right: 45%;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper {
+        padding: 60px;
+    }
+
+    .shop-card-wrapper .shop-card-item-info {
+        margin-bottom: 25px;
+    }
+
+    .shop-by-brand .container .brand-info {
+        flex-wrap: wrap;
+    }
+
+    .shop-by-brand .container .brand-info .brands-img {
+        margin: 0 10px 10px;
+    }
+
+    .card-item-three .card-item-post-block {
+        margin-bottom: 25px;
+    }
+
+    .footer-col {
+        margin-bottom: 40px;
+    }
+
+    .footer .footer-top {
+        padding-bottom: 0;
+    }
+
+    .section-header-filter {
+        flex-direction: column;
+    }
+
+    .filter-product {
+        margin-top: 24px;
+    }
+
+    .blog-list .cardBlogStyle1 .cardInfo a .post-meta-title {
+        font-size: 38px;
+    }
+
+    .blog-list .card-recent-post .cardInfo a .post-meta-title {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .blog-list .card-recent-post {
+        margin-bottom: 24px;
+    }
+
+    .sidebar-right {
+        margin-top: 60px !important;
+    }
+
+    .blog-list-style-3 .card-post-style-3 .cardImage a img {
+        height: 170px !important;
+    }
+
+    .block-filter {
+        margin-bottom: 24px;
+    }
+
+    .box-collapse {
+        justify-content: flex-start !important;
+    }
+
+    .about-info-wrapper .about_title,
+    .about-us .about-content .about_title,
+    .team-member-wrapper .team-title h2 {
+        font-size: 38px;
+    }
+
+    .refund-policy .policy-content-wrapper .refund-title h3 {
+        font-size: 28px;
+    }
+
+
+    .product-style-5 .product-category-wrapper input[type=range] {
+        left: 0;
+    }
+
+    .order-tracking-info-wrapper .order-img img {
+        width: 750px;
+        height: 720px;
+    }
+
+
+    .order-tracking-info-wrapper .order-track-info {
+        padding: 40px 40px;
+        border-radius: 10px;
+        width: 500px;
+        top: 90px;
+    }
+
+    .order-tracking-info-wrapper .order-track-info h2 {
+        font-size: 28px;
+    }
+
+    .order-tracking-info-wrapper .order-track-info p,
+    .order-tracking-info-wrapper .order-track-info .order-input h6 {
+        font-size: 14px;
+    }
+
+    .contact-us-form .submit-btn {
+        margin-bottom: 32px;
+    }
+
+    .header-offcanvasmenu {
+        padding: 20px;
+        min-width: 380px;
+    }
+
+    .header-offcanvasmenu .offcanvas-header h3 {
+        font-size: 24px;
+    }
+
+    .header-offcanvasmenu .offcanvas-header button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .header-offcanvasmenu .offcanvas-header {
+        margin-bottom: 24px;
+    }
+
+    .header-offcanvasmenu .offcanvas-body .wish-item-info {
+        padding: 15px;
+        margin-bottom: 24px;
+    }
+
+    .header-offcanvasmenu .offcanvas-body .wish-item-info .product-info a h6 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .header-offcanvasmenu .offcanvas-body .wish-item-info .btn-close-popup {
+        right: 10px;
+        top: 8px;
+    }
+
+    .header-offcanvasmenu .offcanvas-body .wish-item-info .product-info .product-selling-price p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .header-offcanvasmenu .offcanvas-body .wish-item-info .product-info .product-selling-price .shop-btn svg {
+        width: 18px;
+    }
+
+    .header-offcanvasmenu .offcanvas-body .wish-item-info .product-info .product-selling-price .shop-btn {
+        margin-top: 18px;
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .header-offcanvasmenu .offcanvas-body .wish-item-info .product-info .product-selling-price .review-icon i {
+        font-size: 10px;
+    }
+
+    .offcanvas-body .block-cart .box-cart-wrapper {
+        border: 1px solid #8597BF;
+        padding: 6px 12px 6px 6px !important;
+        border-radius: 10px !important;
+        background-color: #fff;
+    }
+
+    .offcanvas-body .block-cart .box-cart-wrapper .title-product-cart {
+        font-size: 16px;
+    }
+
+    .offcanvas-body .price {
+        font-size: 16px;
+    }
+
+    .offcanvas-body .block-cart .ad-style-2 .banner-text-wrapper {
+        padding: 14px 15px;
+    }
+
+
+    .offcanvas-body .ad-style-2 .banner-text-wrapper .banner-content h4 {
+        font-size: 20px;
+    }
+
+    .offcanvas-body .ad-style-2 .banner-text-wrapper .banner-content p {
+        margin: 10px 0;
+    }
+
+    .offcanvas-body .block-cart .box-cart-wrapper input {
+        width: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .about-us {
+        margin-bottom: -300px;
+    }
+
+    .about-info-wrapper {
+        padding: 60px 0;
+    }
+
+    .about-img-wrapper {
+        flex-direction: column;
+    }
+
+    .about-img-wrapper .about-img:nth-child(2) {
+        left: -200px !important;
+        top: -150px !important;
+    }
+
+    .about-img-wrapper .about-img:nth-child(3) {
+        left: 0px !important;
+        top: -200px !important;
+    }
+
+    .about-img-wrapper .about-img:nth-child(4) {
+        left: -200px !important;
+        top: -350px !important;
+    }
+
+    .about-img-wrapper .about-img:nth-child(5) {
+        left: 0px !important;
+        top: -400px !important;
+    }
+
+
+    .header-top-bar {
+        display: none;
+    }
+
+    .banner.banner-style-1 .banner-content {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .banner.banner-style-1 .banner-thumbnail .banner-img img {
+        height: 460px;
+    }
+
+    .banner.banner-style-2 .banner-img {
+        right: 11%;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img-middle {
+        top: 130px;
+        right: 29%;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img-last {
+        right: 46%;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper .banner-content-2 h1 {
+        font-size: 48px;
+        line-height: 113%;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper::after {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper .banner-background {
+        bottom: 12.5%;
+    }
+
+    .brand-before-icon-img {
+        right: 50px !important;
+    }
+
+    .brand-icon-img {
+        left: 50px !important;
+    }
+
+    .shop-card-wrapper .shop-card-item-info {
+        padding: 41px 40px 5px 40px;
+    }
+
+    .shop-card .card-3,
+    .shop-card .card-2 {
+        padding: 20px 20px 4px 40px;
+        height: 310px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-right-img img {
+        right: 25px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-left-img img {
+        left: 25px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-right-img::after {
+        right: 30px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-left-img::after {
+        left: 30px;
+    }
+
+    .card-4 .shop-card-img img {
+        height: 310px;
+        object-fit: cover;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .middle-content h2 {
+        font-size: 26px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-left-img::after {
+        top: 60px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .middle-content .middle-content-pera p {
+        width: 220px;
+    }
+
+    .advertisement .shop-btn {
+        min-width: auto;
+    }
+
+    .shop-btn {
+        min-width: 150px;
+    }
+
+    .filter-product {
+        flex-direction: column;
+    }
+
+    .fashion-product .section-header-filter .filter-product .sorting-product {
+        margin: 12px 0;
+    }
+
+    .fashion-product .section-header-filter .filter-product .product-search input {
+        margin-left: 0;
+    }
+
+    .fashion-product .section-header-filter .filter-product .default-text {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    .dealing-products .dealing-top-wrapper .slide-arrow-left.slick-arrow {
+        left: 88% !important;
+    }
+
+    .shop-card-wrapper .shop-card-item-info .shop-card-img .circle-img svg,
+    .shop-card-wrapper .shop-card-item .shop-card-img .circle-img svg {
+        width: 50%;
+        height: auto;
+    }
+
+    .top-selling .col-sm-12 {
+        width: 100% !important;
+    }
+
+    .ad-style-2 .banner-text-wrapper {
+        flex-direction: column;
+    }
+
+    .product-category-wrapper .box-collapse .range-slider {
+        margin-bottom: 60px;
+    }
+
+    .ad-style-2 .banner-text-wrapper .shop-btn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .ad-text {
+        position: relative;
+        top: 35px;
+    }
+
+    .refund-policy .col-lg-3 {
+        order: 2;
+    }
+
+    .contact-background {
+        padding: 40px;
+    }
+
+    .cardFeaturePost {
+        justify-content: flex-start !important;
+    }
+
+    .about-info-wrapper .about_title,
+    .about-us .about-content .about_title,
+    .team-member-wrapper .team-title h2 {
+        font-size: 32px;
+    }
+
+    .blog-list-style-3 .cardBlogStyle1 .cardInfo {
+        margin-top: 0;
+    }
+
+    .about-left-content {
+        margin-bottom: 24px;
+    }
+
+    .box-main-gallery {
+        padding: 30px 60px !important;
+    }
+
+    .product-details-wrapper .box-images-product-left .slider-thumbnails .item-thumb {
+        width: 110px;
+        height: 130px;
+        padding: 15px 15px;
+    }
+
+    .post-blog-wrapper {
+        margin-top: 60px !important;
+    }
+
+    .order-tracking-info-wrapper .order-img img {
+        width: 550px;
+        height: 720px;
+    }
+
+    .order-tracking-info-wrapper .order-track-info {
+        width: 400px;
+    }
+
+    .blog-list-details-wrapper .post-blog-wrapper .box-inner-blog-padding .postbox__content .postbox__title a {
+        font-size: 28px;
+    }
+
+    .post__img {
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+
+    .popup-account .box-account-wrapper {
+        max-width: 400px;
+    }
+
+    .popup-account .box-account-wrapper .box-account .form-account-info .btnClose,
+    .popup-account .box-account-wrapper .box-account .form-password-info .btnClose,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .btnClose {
+        padding: 10px 30px;
+    }
+
+    .popup-account .box-account-wrapper .box-account .form-account-info .form-login,
+    .popup-account .box-account-wrapper .box-account .form-password-info .form-login,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .form-login {
+        padding: 0 30px 24px 30px;
+    }
+
+    .popup-account .box-account-wrapper .box-account .form-account-info .btnClose,
+    .popup-account .box-account-wrapper .box-account .form-password-info .btnClose,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .btnClose,
+    .popup-account .box-account-wrapper .box-account .form-account-info .form-login .login-now,
+    .popup-account .box-account-wrapper .box-account .form-account-info .form-login .register-now,
+    .popup-account .box-account-wrapper .box-account .form-password-info .form-login .login-now,
+    .popup-account .box-account-wrapper .box-account .form-password-info .form-login .register-now,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .form-login .login-now,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .form-login .register-now,
+    .popup-account .box-account-wrapper .box-account .form-account-info .form-login .form-group .btn,
+    .popup-account .box-account-wrapper .box-account .form-password-info .form-login .form-group .btn,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .form-login .form-group .btn,
+    .popup-account .box-account-wrapper .box-account .form-account-info .form-login .form-group input,
+    .popup-account .box-account-wrapper .box-account .form-password-info .form-login .form-group input,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .form-login .form-group input,
+    .popup-account .box-account-wrapper .box-account .form-account-info .form-login h4,
+    .popup-account .box-account-wrapper .box-account .form-password-info .form-login h4,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .form-login h4 {
+        margin-bottom: 24px;
+    }
+
+    .popup-account .box-account-wrapper .box-account .form-account-info .form-login .login-now,
+    .popup-account .box-account-wrapper .box-account .form-account-info .form-login .register-now,
+    .popup-account .box-account-wrapper .box-account .form-password-info .form-login .login-now,
+    .popup-account .box-account-wrapper .box-account .form-password-info .form-login .register-now,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .form-login .login-now,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .form-login .register-now {
+        margin-top: 24px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .header-style-1 .header-middle-bar .header-middle-content .header-logo {
+        width: 160px;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .account-icon {
+        margin-right: 12px !important;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail {
+        padding: 280px 0 130px;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img img,
+    .banner.banner-style-2 .banner-thumbnail .banner-img-middle img,
+    .banner.banner-style-2 .banner-thumbnail .banner-img-last img {
+        height: 250px;
+    }
+
+    .banner.banner-style-2 .banner-img {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img-middle {
+        top: 80px;
+        right: 25%;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img-last {
+        top: 120px;
+        right: inherit;
+        left: 40px;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-left-img::after {
+        top: 100px;
+    }
+
+    .shop-by-brand .container .brand-info .brands-img img {
+        width: 60px;
+        height: 30px;
+    }
+
+    .featured-product-area .shop-card-item {
+        padding: 20px !important;
+    }
+
+    .social-share {
+        justify-content: space-between;
+        margin-bottom: 24px !important;
+    }
+
+    .featured-product-area .shop-card-wrapper .shop-card-item::after {
+        display: none;
+    }
+
+    .blog-list-details-wrapper .post-blog-wrapper .box-inner-blog-padding .post__box__share .social-share .post_tags {
+        position: initial;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-left-img::after,
+    .advertisement .ad-background .ad-banner-overly .ad-right-img::after,
+    .advertisement .ad-background .ad-banner-overly .ad-right-img img,
+    .advertisement .ad-background .ad-banner-overly .ad-left-img img {
+        width: 90px;
+        height: 150px;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper {
+        padding: 40px;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper .banner-content-2 h1 {
+        margin: 8px 0 20px 0;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper .banner-content-2 .shop-btn {
+        margin-top: 20px !important;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper .banner-background {
+        bottom: 9.5%;
+        right: 35%;
+    }
+
+    .advertisement .ad-background::after {
+        display: none;
+    }
+
+    .advertisement .ad-background .ad-banner-overly {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .typography-content ul {
+        padding-left: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .typography-content ol.list-style {
+        list-style: numeric;
+    }
+
+    .advertisement .middle-content {
+        margin: 20px 0;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-right-img img,
+    .advertisement .ad-background .ad-banner-overly .ad-left-img img {
+        position: static;
+    }
+
+    .advertisement .ad-background .ad-banner-overly .ad-left-img::after,
+    .advertisement .ad-background .ad-banner-overly .ad-right-img::after {
+        display: none;
+    }
+
+    .shop-card .card-3,
+    .shop-card .card-2 {
+        margin-bottom: 24px;
+    }
+
+    .shop-card .shop-card-clothing {
+        padding: 20px 10px;
+    }
+
+    .shop-card .shop-card-clothing .card-info p {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .shop-card .shop-card-clothing .card-info .card-details h6 {
+        font-size: 18px;
+    }
+
+    .shop-card .shop-card-clothing .card-info>a {
+        font-size: 14px;
+    }
+
+    .shop-card .card-2,
+    .shop-card .card-3 {
+        padding: 20px 80px;
+    }
+
+    .shop-by-brand .container {
+        padding: 30px;
+    }
+
+    .ad-content-wrapper {
+        flex-direction: column;
+    }
+
+    .dealing-products .dealing-top-wrapper .slide-arrow-left.slick-arrow {
+        left: 86% !important;
+    }
+
+    .ad-text {
+        position: static;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .ad-style-2 .banner-text-wrapper .shop-btn {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-right: auto;
+    }
+
+    .ad-style-2 .banner-text-wrapper .banner-text {
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .footer .footer-bottom .payment_gate .paymant-icon {
+        padding: 5px 8px;
+        margin-top: 0;
+        margin-bottom: 12px;
+        margin-right: 5px;
+    }
+
+    .contact-background {
+        padding: 20px;
+    }
+
+    .contact-right-content {
+        padding: 60px 30px;
+    }
+
+    .blog-list .card-recent-post .cardImage a img {
+        width: 100%;
+    }
+
+    .about-right-content {
+        margin-top: 32px;
+    }
+
+    .block-cart .box-cart-wrapper {
+        text-align: center;
+    }
+
+    .price {
+        text-align: center !important;
+    }
+
+    .blog-list .cardBlogStyle1 .cardInfo a .post-meta-title {
+        font-size: 28px;
+    }
+
+    .content-sidebar-post-wrapper {
+        margin-bottom: 32px;
+    }
+
+    .price,
+    .title-product-cart {
+        margin: 24px 0;
+    }
+
+    .team-content {
+        margin-bottom: 24px;
+    }
+
+    .number {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-details-wrapper .product-content-right .box-product-info .font-2xl-bold,
+    .product-details-wrapper .product-content-right .box-product-info .block-price {
+        font-size: 28px;
+    }
+
+    .product-details-wrapper .product-content-right .box-product-info .box-form-cart .form-cart {
+        padding: 3px;
+    }
+
+    .product-details-wrapper .product-content-right .box-product-info .box-form-cart .btn {
+        padding: 9px;
+        font-size: 12px;
+        margin-right: 8px !important;
+    }
+
+    .box-form-cart .btn-cart {
+        margin-left: 8px !important;
+    }
+
+    .wish-cart svg {
+        width: 18px;
+        height: 16px;
+    }
+
+    .product-details-wrapper .product-content-right .box-product-info .box-form-cart .wish-cart {
+        padding: 6px;
+    }
+
+    .order-tracking-info-wrapper .order-track-info {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .order-tracking-info-wrapper .order-img img {
+        width: 400px;
+    }
+
+    .order-tracking-info-wrapper .order-track-info h2 {
+        font-size: 24px;
+    }
+
+    .order-tracking-info-wrapper .order-track-info p,
+    .order-tracking-info-wrapper .order-track-info .order-input input::placeholder,
+    .order-tracking-info-wrapper .order-track-info p,
+    .order-tracking-info-wrapper .order-track-info .order-input h6 {
+        font-size: 12px;
+    }
+
+    .popup-account .box-account-wrapper {
+        max-width: 300px;
+    }
+
+    .popup-account .box-account-wrapper .box-account .form-account-info .btnClose h3,
+    .popup-account .box-account-wrapper .box-account .form-password-info .btnClose h3,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .btnClose h3 {
+        font-size: 24px;
+    }
+
+    .popup-account .box-account-wrapper .box-account .form-account-info .form-login h4,
+    .popup-account .box-account-wrapper .box-account .form-password-info .form-login h4,
+    .popup-account .box-account-wrapper .box-account .form-registerd-info .form-login h4 {
+        font-size: 18px;
+    }
+
+    .form-account-info .col {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-us .about-content .about-img-wrapper .about-img:nth-child(odd) {
+        left: 50px !important;
+    }
+
+    .about-info-wrapper {
+        padding: 40px 0;
+    }
+
+    .about-us .about-content .about-img-wrapper .about-img:nth-child(even) {
+        left: -100px !important;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .header-logo {
+        width: 135px;
+        line-height: 35px;
+    }
+
+    .shop-card .shop-card-clothing .card-info {
+        padding: 0;
+    }
+
+    .banner-style-2 {
+        background-image: linear-gradient(to top, #FDF8EF 52%, #F4F2FF 50%);
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .account-icon svg {
+        width: 16px;
+        height: 17px;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .account-icon {
+        width: 32px !important;
+        height: 32px !important;
+        line-height: 26px !important;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .header-account .account-icon .number-tag {
+        top: -10px;
+        right: -3px;
+    }
+
+    .header-action .sidemenu-btn .btn-wrap {
+        height: 40px;
+        width: 40px;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .account-icon .number-tag {
+        height: 16px !important;
+        width: 16px !important;
+        line-height: 16px !important;
+    }
+
+    .banner .banner-content .subtitle,
+    .banner .banner-content p {
+        font-size: 18px;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail {
+        padding: 270px 0 0;
+    }
+
+    .banner.banner-style-2 .banner-img {
+        top: 30px;
+        right: 30px;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img-middle {
+        top: 60px;
+        right: 26.5%;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img-last {
+        top: 90px;
+        right: inherit;
+        left: 30px;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail,
+    .banner.banner-style-2 .banner-info-wrapper {
+        background-color: transparent;
+    }
+
+    .banner.banner-style-2 .banner-thumbnail .banner-img img,
+    .banner.banner-style-2 .banner-thumbnail .banner-img-middle img,
+    .banner.banner-style-2 .banner-thumbnail .banner-img-last img {
+        width: 120px;
+        height: 150px;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper {
+        padding: 30px;
+    }
+
+
+    .banner.banner-style-2 .banner-info-wrapper .banner-content-2 h1 {
+        font-size: 32px;
+        margin: 10px 0 10px 0;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper .banner-content-2 span {
+        font-size: 18px;
+        margin-bottom: 10px !important;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper .banner-background {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper .banner-background h2 {
+        font-size: 24px;
+        text-align: right;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper .banner-background p {
+        font-size: 11px;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper .banner-content-2 .shop-btn {
+        padding: 10px 14px;
+        font-size: 15px;
+    }
+
+    .banner.banner-style-2 .banner-info-wrapper::after {
+        left: 98%;
+        top: 56%;
+    }
+
+    .top-category-products .section-header .box-button-swiper .swiper-button-prev {
+        right: 55px !important;
+    }
+
+    .shop-card-wrapper .shop-card-item-info,
+    .shop-card-wrapper .shop-card-item {
+        flex-direction: column;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .shop-card-wrapper .shop-card-item-info .card-info {
+        order: 2;
+    }
+
+    .shop-card-wrapper .shop-card-item-info .shop-card-img .circle-img {
+        top: 145px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .brand-before-icon-img {
+        right: 20px !important;
+    }
+
+    .brand-icon-img {
+        left: 20px !important;
+    }
+
+    .dealing-products .dealing-top-wrapper .slide-arrow-left.slick-arrow {
+        left: 82% !important;
+    }
+
+    .shop-card-wrapper .shop-card-item-info .shop-card-img .circle-img svg,
+    .shop-card-wrapper .shop-card-item .shop-card-img .circle-img svg {
+        width: 50%;
+        height: auto;
+    }
+
+    .shop-card-wrapper .shop-card-item-info .shop-card-img {
+        z-index: 1;
+        margin: 60px 0 15px;
+    }
+
+    .shop-card-wrapper .shop-card-item-info .card-info .shop-btn,
+    .shop-card-wrapper .shop-card-item .card-info .shop-btn {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .shop-card-wrapper .shop-card-item-info .card-info .shop-btn a,
+    .shop-card-wrapper .shop-card-item .card-info .shop-btn a {
+        background: #161C2D;
+        padding: 10px 20px;
+    }
+
+    .shop-by-brand .container .brand-info .brands-img {
+        flex-basis: 42%;
+    }
+
+    .card-item .card-right-img img {
+        height: 150px;
+    }
+
+    .new-arrivals-products .arrivals-product-wrapper .selling-pera p {
+        padding: 0;
+        text-align: center;
+    }
+
+    .featured-product-area .shop-card-wrapper .shop-card-item .card-info {
+        padding: 0 30px 30px;
+    }
+
+    .footer {
+        padding: 40px 0 0 0;
+    }
+
+    .fashion-product .box-pagination .pagination .page-item .page-link {
+        padding: 8px 14px;
+        font-size: 16px;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .order-tracking-info-wrapper .order-track-info {
+        width: 200px;
+    }
+
+    .order-tracking-info-wrapper .order-track-info h2 {
+        font-size: 18px;
+    }
+
+    .order-tracking-info-wrapper .order-img img {
+        width: 300px;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .header-logo {
+        width: 110px;
+        line-height: 45px;
+    }
+
+    .banner.banner-style-1 .banner-thumbnail .banner-img img {
+        height: 360px;
+    }
+
+
+    .card-1 .shop-card-img img {
+        width: 175px;
+    }
+
+    .card-1 .card-shadow-img {
+        left: 90px;
+    }
+
+    .shop-card .shop-card-clothing .shop-card-img .sale-badge {
+        top: -14px;
+        right: 90px;
+    }
+
+    .shop-card-img {
+        text-align: center;
+    }
+
+    .trending-products .section-head .box-button-swiper .swiper-button-prev,
+    .trending-products .section-head .box-button-swiper .swiper-button-next {
+        width: 32px;
+        height: 32px;
+        top: -25px;
+    }
+
+    .trending-products .section-head .title h4 {
+        font-size: 20px;
+    }
+
+    .shop-card .card-1 {
+        display: block;
+    }
+
+    .shop-card .shop-card-clothing .card-info>a {
+        margin-top: 0;
+    }
+
+    .card-info {
+        margin-bottom: 12px;
+    }
+
+    .dealing-products .dealing-top-wrapper .dealing-slider .dealing-top-products .product-slide .deal-top-info-wrapper .top-dealing-content .top-img-content {
+        text-align: center;
+    }
+
+
+    .card-4 .shop-card-img img {
+        height: auto;
+        object-fit: cover;
+    }
+
+    .shop-card .shop-card-clothing .shop-card-img {
+        padding: 0;
+    }
+
+    .shop-by-brand .container .brand-info .brands-img {
+        margin: 0 0 20px;
+    }
+
+
+    .dealing-products .dealing-top-wrapper .slide-arrow-left.slick-arrow {
+        left: 78% !important;
+    }
+
+
+    .card-item-three .card-item-post-block .card-item-info {
+        flex-direction: column;
+    }
+
+    .card-item-three .card-item-post-block .card-item-info .card-content-title {
+        order: 2;
+    }
+
+    .card-item-three .card-item-post-block .card-item-info .card-item-img {
+        margin-bottom: 20px;
+    }
+
+    .ad-style-2 .banner-text-wrapper {
+        padding: 30px;
+    }
+
+    .ad-style-2 .banner-text-wrapper .banner-content h4 {
+        font-size: 26px;
+    }
+
+    .ad-style-2 .banner-text-wrapper .banner-content p {
+        font-size: 14px;
+    }
+
+    .footer-col input {
+        width: 100%;
+    }
+
+    .contact-right-content .contact-info .icon svg {
+        top: 33px;
+        left: 17px;
+        width: 22px;
+        height: 18px;
+    }
+
+    .contact-right-content .contact-info .icon::after {
+        width: 55px;
+        height: 55px;
+    }
+
+    .contact-right-content .contact-info .icon::before {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-right-content .contact-info .info-details {
+        margin-left: 70px;
+    }
+
+    .contact-right-content .contact-info .icon {
+        margin-bottom: 85px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .about-us .about-content .about-img-wrapper .about-img img {
+        width: 160px;
+    }
+
+    .about-us .about-content .about-img-wrapper .about-img:nth-child(odd) {
+        left: 20px !important;
+    }
+
+    .header-style-1 .header-middle-bar .header-middle-content .account-icon {
+        width: 28px !important;
+        height: 28px !important;
+        line-height: 22px !important;
+    }
+
+    .shop-card .shop-card-clothing .card-info p {
+        font-size: 24px;
+    }
+
+    .shop-card .shop-card-clothing .shop-card-img .sale-badge {
+        top: -10px;
+    }
+
+    .shop-card .shop-card-clothing .card-info .card-details h6 {
+        font-size: 12px;
+    }
+
+    .shop-card .shop-card-clothing .card-info {
+        padding: 0;
+    }
+}

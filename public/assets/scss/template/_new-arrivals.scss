@@ -1,0 +1,169 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/*-------------------------
+   New Arrival 
+-------------------------*/
+.new-arrivals-products {
+    .arrivals-product-wrapper {
+        padding: 29px 39px;
+        background-color: $card-4;
+        border-radius: 10px;
+        margin-top: 40px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        .selling-pera {
+            z-index: 1;
+
+            & p {
+                padding: 0 50px;
+                margin-bottom: 15px;
+                @include fs (#000, 24px, 500, $jost);
+            }
+        }
+
+        .product-info {
+            & span {
+                @include fs ($dark-clr, 12px, 500, $jost);
+                margin-left: 40px;
+                margin-bottom: 12px;
+
+                .shop-btn {
+                    margin-left: 12px;
+                    @include fs ($white-clr, 16px, 500, $jost);
+                    padding: 6px 12px;
+                    border-radius: 3px;
+                }
+            }
+
+            .product-ad-img {
+                z-index: 1;
+
+                .back-img {
+                    z-index: -1;
+                    position: absolute;
+                    top: 70px;
+                    left: -45px;
+                }
+
+                .circle-discount-info {
+                    position: absolute;
+                    top: 40px;
+                    right: -30px;
+
+                    .circle-content {
+                        position: absolute;
+                        z-index: 1;
+                        top: 0;
+                        right: 28px;
+                        transform: translateY(6px);
+
+                        .new {
+                            @include fs ($white-clr, 12px, 500, $poppins);
+                            margin-bottom: 0;
+                            margin-left: 0;
+                        }
+
+                        .sale {
+                            @include fs ($white-clr, 20px, 500, $poppins);
+                        }
+
+                        .up-to {
+                            @include fs ($white-clr, 8px, 500, $poppins);
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            position: absolute;
+                            top: 48px;
+                            left: 0;
+                        }
+
+                        .discount {
+                            @include fs ($white-clr, 20px, 500, $poppins);
+                            margin-top: 5px;
+                            text-align: left;
+
+                            & span {
+                                @include fs ($white-clr, 20px, 500, $poppins);
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                position: absolute;
+                                top: 43px
+                            }
+                        }
+
+                        .dis-off {
+                            @include fs ($white-clr, 10px, 500, $poppins);
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            position: absolute;
+                            top: 67px;
+                            right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .product-overlay {
+            transition: var(--transition);
+            line-height: 24px;
+            width: 100%;
+            padding: 11px 12px;
+
+            .add-btn {
+                transition: all .5s ease-in-out;
+                border: 1px solid $primary-clr;
+                cursor: pointer;
+                padding: 12px 10px;
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 500;
+                color: #fff;
+                border-radius: 10px;
+                text-transform: uppercase;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+
+                & a {
+                    @include fs ($dark-clr, 18px, 500, $poppins);
+                }
+
+                &:hover {
+                    background-color: #2C2C2C;
+                    border: 1px solid $dark-clr;
+
+                    & a {
+                        @include fs ($white-clr, 18px, 500, $poppins);
+                    }
+                }
+            }
+        }
+
+        .flash-selling-content {
+            z-index: -1;
+
+            .top-svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .btm-svg {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+}

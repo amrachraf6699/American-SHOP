@@ -1,0 +1,124 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/*-------------------------
+    Footer design
+-------------------------*/
+.footer {
+    background: $background-light;
+    padding: 80px 0 0 0;
+
+    .footer-top {
+        border-bottom: 1px solid #8597BF;
+        padding-bottom: 40px;
+
+        .footer-col {
+            &::after {
+                @include after_tl(0, 25px, 42px, 2px, $primary-clr);
+            }
+
+            .footer-col-title {
+                & h6 {
+                    @include card-pera;
+                    text-transform: capitalize;
+                }
+            }
+
+            .footer-menu {
+                padding-left: 0;
+
+                & li {
+                    list-style: none;
+                }
+            }
+
+            & li a {
+                @include fs($footer-pera-clr, 16px, 400, $jost);
+                text-align: left;
+                margin-bottom: 12px;
+                transition: var(--transition);
+
+                &:hover {
+                    color: $primary-clr;
+                }
+            }
+
+            .social-menu {
+                margin-bottom: 32px;
+
+                & li {
+                    margin-left: 11px;
+                    list-style: none;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            & p {
+                margin-bottom: 16px;
+                @include fs($dark-clr, 18px, 600, $jost);
+            }
+
+            .footer-input {
+                background-color: $white-clr;
+                border: 1px solid $border-light-clr;
+                border-radius: 0;
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                ::placeholder {
+                    @include fs($footer-pera-clr, 16px, 400, $jost);
+                }
+            }
+
+            .footer-btn {
+                background-color: $white-clr;
+                border: 1px solid $primary-clr;
+                background-color: $primary-clr;
+                color: $white-clr;
+                padding: 12px 22px;
+                transition: var(--transition);
+                &:hover {
+                    background: $dark-clr;
+                    border: 1px solid $dark-clr;
+                }
+                &::placeholder {
+                    @include fs($footer-pera-clr, 16px, 400, $jost);
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 40px 0;
+
+        .payment-text {
+            @include fs($dark-clr, 18px, 600, $jost);
+            margin-bottom: 10px;
+        }
+
+        .payment_gate {
+            .paymant-icon {
+                padding: 5px 8px;
+                margin-top: 12px;
+                border-radius: 2px;
+                border: 1px solid #EDEDED;
+                background: $white-clr;
+                margin-right: 5px;
+            }
+        }
+    }
+    .footer-copyright {
+        height: 50px;
+        line-height: 50px;
+        background-color: $dark-clr;
+        .copyright-text {
+            @include fs (#fff, 16px, 400, $jost);
+        }
+    }
+}
+

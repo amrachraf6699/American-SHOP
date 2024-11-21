@@ -1,0 +1,459 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/*-------------------------
+    Order tracking
+-------------------------*/
+.order-tracking-info-wrapper {
+    .order-img {
+        & img {
+            width: 1040px;
+            height: 750px;
+            object-fit: cover;
+        }
+    }
+
+    .order-track-info {
+        padding: 60px 80px;
+        border-radius: 10px;
+        background: $background-light;
+        width: 695px;
+        top: 75px;
+        left: 0;
+
+        & h2 {
+            @include secondary-heading;
+            line-height: 110%;
+            text-align: left;
+
+        }
+
+        & p {
+            @include fs($dark-light-clr, 16px, 400, $jost);
+            margin: 24px 0 32px 0;
+        }
+
+        .order-input {
+            & h6 {
+                @include fs($dark-clr, 16px, 500, $jost);
+                margin-bottom: 24px;
+            }
+
+            & input {
+                margin-bottom: 32px;
+                border: 1px solid #8597BF;
+                background-color: transparent;
+                border-radius: 5px;
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                &::placeholder {
+                    @include fs($dark-clr, 16px, 400, $jost);
+                }
+            }
+        }
+
+        .order-btn {
+            padding: 12px 42px;
+            background-color: $primary-clr;
+            color: $white-clr;
+            border: none;
+            border-radius: 5px;
+            transition: var(--transition);
+
+            &:hover {
+                background-color: $dark-clr;
+            }
+        }
+    }
+}
+
+
+/*-------------------------
+    Checkout page 
+-------------------------*/
+.checkout {
+    .section-title {
+        @include fs($dark-clr, 32px, 500, $jost);
+    }
+
+    .form-floating>label {
+        padding-left: 20px;
+        @include fs($text-blur, 16px, 400, $jost);
+    }
+
+    .form-control {
+        background-color: $white-clr;
+        padding: 20px;
+        border-radius: 9px;
+        border: 1px solid $text-blur;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .order-summery {
+        & h5 {
+            @include fs($dark-clr, 24px, 500, $jost);
+        }
+
+        .order-details {
+            border-bottom: 1px solid $text-blur;
+
+            & p,
+            & span {
+                padding: 16px 0;
+                @include fs($dark-clr, 18px, 400, $jost);
+            }
+        }
+
+        .order-total {
+            border-bottom: 1px solid $dark-clr;
+        }
+    }
+
+    .payment-title {
+        @include fs($dark-light-clr, 16px, 400, $jost);
+    }
+
+    .pay-title {
+        @include fs($dark-clr, 20px, 500, $jost);
+    }
+
+    .payment-label {
+        & input {
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            margin-right: 8px;
+            border: 1px solid #FED7A1;
+            padding: 0;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &::after {
+                background-color: transparent;
+            }
+
+            &::before {
+                display: none;
+            }
+
+            &:checked {
+                border: 1px solid $primary-clr;
+                background-color: $primary-clr;
+            }
+
+            &[type="radio"]:checked::after {
+                background-color: $primary-clr;
+            }
+        }
+
+        & label {
+            margin-right: 40px;
+            @include fs($dark-clr, 16px, 400, $jost);
+        }
+    }
+
+    .payment-info {
+        input {
+            border-bottom: 1px solid $text-blur !important;
+            padding: 12px 0 12px 10px;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            background-color: #fff;
+            border-radius: 0;
+
+            &::placeholder {
+                @include fs(#4F5D81, 16px, 400, $jost);
+            }
+        }
+    }
+
+    .checkout-box {
+        @include fs(#4D4D4E, 16px, 400, $jost);
+    }
+
+    .order-details {
+        .order_info {
+            color: $dark-light-clr !important;
+        }
+    }
+
+    .checkout-info-details {
+        @include fs($footer-pera-clr, 16px, 400, $jost);
+    }
+
+    .shop-btn {
+        padding: 16px 32px;
+        @include fs($white-clr, 16px, 600, $jost);
+        border: none;
+        transition: var(--transition);
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:hover {
+            background-color: $dark-clr;
+            color: #fff;
+            border: none;
+        }
+    }
+
+    .box-total-checkout {
+        .box-checkout-right-content {
+            & a {
+                @include fs($dark-clr, 18px, 600, $jost);
+            }
+
+            & p {
+                @include fs($dark-clr, 18px, 600, $jost);
+                margin-right: 24px;
+            }
+        }
+
+        .order-notes {
+            & p {
+                @include fs($dark-light-clr, 14px, 600, $jost);
+                margin-bottom: 12px;
+            }
+
+            & h5 {
+                @include fs($dark-clr, 20px, 500, $jost);
+                margin-bottom: 12px;
+            }
+
+            & textarea {
+                width: 100%;
+                height: 190px;
+                padding: 20px;
+                border-radius: 9px;
+                background-color: #fff;
+                border: 1px solid $text-blur;
+
+                &::placeholder {
+                    @include fs($text-blur, 16px, 400, $jost);
+                }
+            }
+        }
+    }
+}
+
+.btn-primary:hover,
+.btn-check:focus-visible+.btn-primary,
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    background-color: transparent;
+    border: 1px solid $primary-clr;
+    color: $primary-clr;
+}
+
+.was-validated .form-check-input:valid~.form-check-label,
+.form-check-input.is-valid~.form-check-label {
+    color: $text-blur;
+    margin-bottom: 1rem;
+}
+
+/*-------------------------
+    FAQ
+-------------------------*/
+.faq-area {
+    .faq-wrapper {
+        .bd-faq {
+            & h3 {
+                @include fs($dark-clr, 32px, 500, $jost);
+            }
+
+            .bd-faq-group {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .accordion-item {
+                    border: none;
+
+                    .accordion-button {
+                        border-bottom: 1px solid #BCBCBC;
+                        padding: 12px 20px;
+                        @include fs ($dark-clr, 18px, 500, $jost);
+                        line-height: 140%;
+                        text-align: left;
+                        gap: 15px;
+
+                        &::after {
+                            content: "\2b";
+                            @include fs ($dark-clr, 18px, 500, $jost);
+                            background-image: none;
+                            margin-inline-start: 0;
+                            text-align: center;
+                            position: absolute;
+                            right: 15px;
+                        }
+
+                        &:not(.collapsed) {
+                            background-color: transparent;
+                            box-shadow: none;
+                        }
+
+                        &:not(.collapsed)::after {
+                            content: "\-";
+                            top: 20px;
+                        }
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+
+                    .accordion-collapse {
+                        border: none;
+                        transition: all 0.5s ease;
+
+                        .accordion-body {
+                            @include fs ($footer-pera-clr, 16px, 400, $jost);
+                            line-height: 28px;
+                            padding: 12px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*-------------------------
+    Policy Area Start
+-------------------------*/
+.refund-policy {
+    .refund-left-wrapper {
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #E2E2E2;
+
+        & h5 {
+            @include fs ($dark-clr, 24px, 500, $jost);
+            margin-bottom: 24px;
+        }
+
+        .refund-addres {
+            & p {
+                @include fs ($dark-clr, 16px, 400, $jost);
+                margin-bottom: 6px;
+            }
+        }
+
+        .refund-list-wrapper {
+            margin-top: 32px;
+
+            & ul {
+                .refund-list {
+                    .list-item {
+                        @include fs ($dark-clr, 16px, 400, $jost);
+                        margin-bottom: 8px;
+                        position: relative;
+
+                        &::after {
+                            opacity: 0;
+                            @include after_tl (0, 25px, 0, 2px, $primary-clr);
+                            transition: var(--transition);
+                        }
+
+                        &:hover {
+                            &::after {
+                                opacity: 1;
+                                width: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .subscribe-letter {
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid #DADADA;
+            background: #FAFAFA;
+
+            & h4 {
+                @include fs ($dark-clr, 20px, 500, $jost);
+                margin-bottom: 24px;
+                line-height: 120%;
+                text-align: center;
+            }
+
+            .subscribe-content {
+                @include fs ($dark-clr, 14px, 400, $jost);
+                margin-bottom: 24px;
+                line-height: 160%;
+                letter-spacing: 0.2px
+            }
+
+            .subscribing {
+                margin-bottom: 24px;
+
+                input {
+                    width: 100%;
+                    padding: 3px 3px 3px 9px;
+                    border-radius: 50px;
+                    border: 0.5px solid #FB9F4F;
+                    background: rgba(255, 255, 255, 0.20);
+
+                    &::placeholder {
+                        @include fs ($text-blur, 12px, 400, $jost);
+                        padding-left: 18px;
+                    }
+                }
+
+                .submit {
+                    border-radius: 50px;
+                    background: #F97316;
+                    padding: 4px 10px;
+                    border: none;
+                    @include fs ($white-clr, 10px, 500, $jost);
+                    position: absolute;
+                    right: 3px;
+                    top: 4px;
+                }
+
+                svg {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                }
+            }
+
+            .btn-text {
+                @include fs ($dark-light-clr, 10px, 400, $jost);
+
+                & a {
+                    @include fs ($primary-clr, 10px, 500, $jost);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .policy-content-wrapper {
+        .refund-title {
+            & h3 {
+                @include fs ($dark-clr, 32px, 500, $jost);
+            }
+        }
+
+        .refund-pera {
+            & p {
+                @include fs ($dark-light-clr, 16px, 400, $jost);
+            }
+        }
+    }
+}

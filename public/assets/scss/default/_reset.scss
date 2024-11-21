@@ -1,0 +1,54 @@
+/*-------------------------
+    Reset Styels
+-------------------------*/
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+span {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+ul.list-style,
+ol.list-style {
+    margin: -10px 0;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.main-wrapper {
+    overflow: hidden;
+}
+
+// Grid
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    max-width: 1430px;
+}

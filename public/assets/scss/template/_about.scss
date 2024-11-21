@@ -1,0 +1,99 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/*-------------------------
+   About Us
+-------------------------*/
+.about-us {
+    .about-content {
+        .about_title {
+            @include secondary-heading;
+        }
+
+        & p {
+            @include fs ($dark-light-clr, 16px, 400, $jost);
+            margin: 16px 0 64px 0;
+        }
+
+        .about-img-wrapper {
+            position: relative;
+            z-index: 1;
+            display: flex;
+
+            .about-img {
+                position: relative;
+                z-index: 1;
+
+                // width: 400px;
+                img {
+                    width: 360px;
+                    max-width: none;
+                    height: auto;
+                    object-fit: cover;
+                    border: 10px solid #fff;
+                    border-radius: 20px;
+                }
+
+                &:nth-child(even) {
+                    top: 54px;
+                }
+
+                &:nth-child(2) {
+                    left: -100px;
+                }
+
+                &:nth-child(3) {
+                    left: -200px;
+                }
+
+                &:nth-child(4) {
+                    left: -300px;
+                }
+
+                &:nth-child(5) {
+                    left: -400px;
+                }
+            }
+        }
+    }
+}
+
+.about-info-wrapper {
+    padding: 120px 0;
+    background-color: $background-light-pink;
+
+    .about_title {
+        @include secondary-heading;
+        text-align: left
+    }
+
+    .about-img {
+        overflow: hidden;
+
+        img {
+            transition: all .5s;
+            border-radius: 10px;
+
+            &:hover {
+                transform: scale(1.1);
+                border-radius: 10px;
+            }
+        }
+    }
+
+    & p {
+        @include fs ($dark-light-clr, 16px, 400, $jost);
+        margin: 24px 0 24px 0;
+    }
+
+    .discover {
+        padding: 16px 32px;
+        background-color: $primary-clr;
+        @include fs ($white-clr, 14px, 500, $jost);
+        border-radius: 5px;
+
+        &:hover {
+            background-color: $dark-clr;
+        }
+    }
+}
